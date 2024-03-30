@@ -13,7 +13,7 @@ export enum eEthereumNetwork {
   main = 'main',
   coverage = 'coverage',
   hardhat = 'hardhat',
-
+  sepolia = 'sepolia',
   tenderly = 'tenderly',
   goerli = 'goerli',
 }
@@ -36,6 +36,7 @@ export enum EthereumNetworkNames {
   kovan = 'kovan',
   ropsten = 'ropsten',
   main = 'main',
+  sepolia = 'sepolia',
   matic = 'matic',
   mumbai = 'mumbai',
   xdai = 'xdai',
@@ -257,6 +258,7 @@ export interface iAssetBase<T> {
   STAKE: T;
   xSUSHI: T;
   WAVAX: T;
+  BTC: T;
 }
 
 export type iAssetsWithoutETH<T> = Omit<iAssetBase<T>, 'ETH'>;
@@ -287,6 +289,8 @@ export type iAavePoolAssets<T> = Pick<
   | 'ENJ'
   | 'xSUSHI'
 >;
+
+export type iSepoliaPoolAssets<T> = Pick<iAssetsWithoutUSD<T>, 'LINK'>;
 
 export type iLpPoolAssets<T> = Pick<
   iAssetsWithoutUSD<T>,
@@ -432,6 +436,7 @@ export interface iEthereumParamsPerNetwork<T> {
   [eEthereumNetwork.kovan]: T;
   [eEthereumNetwork.ropsten]: T;
   [eEthereumNetwork.main]: T;
+  [eEthereumNetwork.sepolia]: T;
   [eEthereumNetwork.hardhat]: T;
   [eEthereumNetwork.tenderly]: T;
   [eEthereumNetwork.goerli]: T;
@@ -537,6 +542,10 @@ export interface ICommonConfiguration extends IBaseConfiguration {
 
 export interface IAaveConfiguration extends ICommonConfiguration {
   ReservesConfig: iAavePoolAssets<IReserveParams>;
+}
+
+export interface ISepoliaConfiguration extends ICommonConfiguration {
+  ReservesConfig: iSepoliaPoolAssets<IReserveParams>;
 }
 
 export interface IAmmConfiguration extends ICommonConfiguration {

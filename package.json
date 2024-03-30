@@ -7,6 +7,15 @@
     "artifacts"
   ],
   "scripts": {
+    "hardhat:sepolia": "hardhat --network sepolia",
+    "aave:fork:sepolia": "npm run compile && FORK=sepolia hardhat aave:mainnet",
+    "aave:sepolia:full:migration": "npm run compile && npm run hardhat:sepolia -- aave:mainnet --verify",
+    "print-contracts:sepolia": "npm run hardhat:sepolia -- print-contracts",
+    "sepolia:verify": "npm run hardhat:sepolia verify:general -- --all --pool Aave",
+    "sepolia:verify:tokens": "npm run hardhat:sepolia verify:tokens -- --pool Aave",
+    "test-sepolia": "npm run compile && TS_NODE_TRANSPILE_ONLY=1 hardhat:sepolia hardhat test ./test-suites/test-aave/*.spec.ts",
+    "test:fork-sepolia": "npm run compile && TS_NODE_TRANSPILE_ONLY=1 FORK=sepolia hardhat test ./test-suites/test-aave/*.spec.ts",
+
     "run-env": "npm i && tail -f /dev/null",
     "hardhat": "hardhat",
     "hardhat:kovan": "hardhat --network kovan",
