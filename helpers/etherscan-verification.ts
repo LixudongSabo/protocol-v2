@@ -15,6 +15,7 @@ const okErrors = [`Contract source code already verified`, 'Already Verified'];
 const unableVerifyError = 'Fail - Unable to verify';
 
 export const SUPPORTED_ETHERSCAN_NETWORKS = [
+  'sepolia',
   'main',
   'ropsten',
   'kovan',

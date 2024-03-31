@@ -88,7 +88,7 @@ const buidlerConfig: HardhatUserConfig = {
     apiKey: {
       polygonMumbai: process.env.ETHERSCAN_POLYGON_KEY || '',
       goerli: process.env.ETHERSCAN_KEY || '',
-      fuji: process.env.ETHERSCAN_SNOWTRACE_KEY || '',
+      sepolia: process.env.ETHERSCAN_KEY || '',
       mainnet: process.env.ETHERSCAN_KEY || '',
       polygon: process.env.ETHERSCAN_POLYGON_KEY || '',
       avalanche: process.env.ETHERSCAN_SNOWTRACE_KEY || '',

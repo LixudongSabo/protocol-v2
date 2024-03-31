@@ -241,7 +241,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.goerli]: '',
   },
   ReserveFactorTreasuryAddress: {
-    [eEthereumNetwork.sepolia]: '',
+    [eEthereumNetwork.sepolia]: ZERO_ADDRESS,
     [eEthereumNetwork.coverage]: '',
     [eEthereumNetwork.hardhat]: '',
     [eEthereumNetwork.buidlerevm]: '',

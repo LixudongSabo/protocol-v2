@@ -39,7 +39,7 @@ export const AaveConfig: ISepoliaConfiguration = {
   },
   ReserveAssets: {
     [eEthereumNetwork.sepolia]: {
-      LINK: '0xAD5ce863aE3E4E9394Ab43d4ba0D80f419F61789',
+      LINK: '0x779877A7B0D9E8603169DdbD7836e478b4624789',
     },
     [eEthereumNetwork.goerli]: {},
     [eEthereumNetwork.buidlerevm]: {},
