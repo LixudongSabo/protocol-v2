@@ -49,7 +49,7 @@ export const CommonsConfig: ICommonConfiguration = {
 
   // If PoolAdmin/emergencyAdmin is set, will take priority over PoolAdminIndex/emergencyAdminIndex
   PoolAdmin: {
-    [eEthereumNetwork.sepolia]: undefined,
+    [eEthereumNetwork.sepolia]: '0x9dA90D7d0e45abE7FF3f9135f8E3a2a14Ad5bD82',
     [eEthereumNetwork.coverage]: undefined,
     [eEthereumNetwork.buidlerevm]: undefined,
     [eEthereumNetwork.hardhat]: undefined,
@@ -61,7 +61,7 @@ export const CommonsConfig: ICommonConfiguration = {
   },
   PoolAdminIndex: 0,
   EmergencyAdmin: {
-    [eEthereumNetwork.sepolia]: undefined,
+    [eEthereumNetwork.sepolia]: '0x9dA90D7d0e45abE7FF3f9135f8E3a2a14Ad5bD82',
     [eEthereumNetwork.hardhat]: undefined,
     [eEthereumNetwork.coverage]: undefined,
     [eEthereumNetwork.buidlerevm]: undefined,
@@ -73,7 +73,7 @@ export const CommonsConfig: ICommonConfiguration = {
   },
   EmergencyAdminIndex: 1,
   ProviderRegistry: {
-    [eEthereumNetwork.sepolia]: '',
+    [eEthereumNetwork.sepolia]: '0x8545CeED0F4a5fd09d3Ca3483C03c06ecdc6a060',
     [eEthereumNetwork.kovan]: '',
     [eEthereumNetwork.ropsten]: '',
     [eEthereumNetwork.main]: '',
@@ -84,7 +84,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.goerli]: '',
   },
   ProviderRegistryOwner: {
-    [eEthereumNetwork.sepolia]: '',
+    [eEthereumNetwork.sepolia]: '0x9dA90D7d0e45abE7FF3f9135f8E3a2a14Ad5bD82',
     [eEthereumNetwork.kovan]: '',
     [eEthereumNetwork.ropsten]: '',
     [eEthereumNetwork.main]: '',
@@ -95,7 +95,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.goerli]: '',
   },
   LendingRateOracle: {
-    [eEthereumNetwork.sepolia]: '',
+    [eEthereumNetwork.sepolia]: '0xD3294149015926B41A83D9c8ac9cfaBae6A4A0D8',
     [eEthereumNetwork.coverage]: '',
     [eEthereumNetwork.hardhat]: '',
     [eEthereumNetwork.buidlerevm]: '',
@@ -106,7 +106,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.goerli]: '',
   },
   LendingPoolCollateralManager: {
-    [eEthereumNetwork.sepolia]: '',
+    [eEthereumNetwork.sepolia]: '0x9E863B1940A509820d798C27C2C6BA020C1f2847',
     [eEthereumNetwork.coverage]: '',
     [eEthereumNetwork.hardhat]: '',
     [eEthereumNetwork.buidlerevm]: '',
@@ -117,7 +117,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.goerli]: '',
   },
   LendingPoolConfigurator: {
-    [eEthereumNetwork.sepolia]: '',
+    [eEthereumNetwork.sepolia]: '0x4f5da8d5D3Af02dcbA6631EAcF15cF80dE4f2541',
     [eEthereumNetwork.coverage]: '',
     [eEthereumNetwork.hardhat]: '',
     [eEthereumNetwork.buidlerevm]: '',
@@ -139,7 +139,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.goerli]: '',
   },
   WethGateway: {
-    [eEthereumNetwork.sepolia]: '',
+    [eEthereumNetwork.sepolia]: '0xD0c90258438F7d0987390f5B088C961248dDF549',
     [eEthereumNetwork.coverage]: '',
     [eEthereumNetwork.hardhat]: '',
     [eEthereumNetwork.buidlerevm]: '',
@@ -161,7 +161,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.goerli]: '',
   },
   AaveOracle: {
-    [eEthereumNetwork.sepolia]: '',
+    [eEthereumNetwork.sepolia]: '0x7a6E24B9c476F1030ea98f160d892b940fc2E00E',
     [eEthereumNetwork.coverage]: '',
     [eEthereumNetwork.hardhat]: '',
     [eEthereumNetwork.buidlerevm]: '',
@@ -219,7 +219,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.goerli]: '',
   },
   WETH: {
-    [eEthereumNetwork.sepolia]: '',
+    [eEthereumNetwork.sepolia]: '0xD0c90258438F7d0987390f5B088C961248dDF549',
     [eEthereumNetwork.coverage]: '', // deployed in local evm
     [eEthereumNetwork.hardhat]: '', // deployed in local evm
     [eEthereumNetwork.buidlerevm]: '', // deployed in local evm
@@ -230,7 +230,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.goerli]: '',
   },
   WrappedNativeToken: {
-    [eEthereumNetwork.sepolia]: '',
+    [eEthereumNetwork.sepolia]: '0x844372F6Dfb12A4f9c96226CCd8C10503C2748fC',
     [eEthereumNetwork.coverage]: '', // deployed in local evm
     [eEthereumNetwork.hardhat]: '', // deployed in local evm
     [eEthereumNetwork.buidlerevm]: '', // deployed in local evm

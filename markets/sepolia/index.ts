@@ -3,27 +3,7 @@ import { ISepoliaConfiguration, eEthereumNetwork } from '../../helpers/types';
 
 import { CommonsConfig } from './commons';
 import {
-  strategyBUSD,
-  strategyDAI,
-  strategySUSD,
-  strategyTUSD,
-  strategyUSDC,
-  strategyUSDT,
-  strategyAAVE,
-  strategyBAT,
-  strategyZRX,
-  strategyKNC,
   strategyLINK,
-  strategyMANA,
-  strategyMKR,
-  strategyREN,
-  strategySNX,
-  strategyUNI,
-  strategyWBTC,
-  strategyWETH,
-  strategyYFI,
-  strategyXSUSHI,
-  strategyENJ,
 } from './reservesConfigs';
 
 // ----------------
